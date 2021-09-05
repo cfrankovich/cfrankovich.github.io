@@ -1,5 +1,6 @@
 html {
 	font-family: Hack, Courier New, Courier, monospace;
+	color: #F9F1F0;
 }
 
 html, body {
@@ -55,6 +56,7 @@ a:hover {
 }
 
 .stuffp {
+	color: #F9F1F0;
 	margin: 0;
 }
 
