@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1">
+	<meta data-react-helmet="true" name="msapplication-TileColor" content="#7C9CAB">
+	<meta data-react-helmet="true" name="theme-color" content="#7C9CAB">
+  	<meta data-react-helmet="true" name="description" content="Personal website/blog">
+	<meta data-react-helmet="true" property="og:type" content="website">
+	<meta data-react-helmet="true" property="og:url" content="frankovich.dev">
+	<meta data-react-helmet="true" property="og:description" content="Personal website/blog">
+	<meta data-react-helmet="true" name="twitter:widgets:theme" content="light">
+	<meta data-react-helmet="true" name="twitter:dnt" content="on">
+	<meta data-react-helmet="true" name="twitter:creator" content="@carsonfranko">
+	<meta data-react-helmet="true" name="twitter:title" content="cfrankovich">
+	<meta data-react-helmet="true" name="twitter:description" content="Personal website/blog">
+	<title>cfrankovich</title>
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+
+<body>
+	<nav>
+		<a href="#" class="navlink">home</a>	
+		<a href="#" class="navlink">about</a>	
+		<a href="#" class="navlink">blog</a>	
+		<a href="#" class="navlink">contact</a>	
+	</nav>
+
+	<div class="content">
+		<h2>welcome.</h2>
+		<p>
+		Let's keep this simple. I'm Carson, a student at Cypress Bay Highschool. I love to tinker with computers and make software. You can checkout my github <a href="https://github.com/cfrankovich">here</a> for my most recent projects. 
+		</p>
+	</div>
+
+	<div class="content">
+		<h2>latest.</h2>
+		<p>
+		Currently, I'm working on an minimalistic interpreter called V.A.M.P. that can quickly edit matrices and other forms of 2D data. The end goal is to have a program that is comparable to <a href="https://en.wikipedia.org/wiki/R_(programming_language)">R</a>. If you want to read more about it visit the <a href="#">blog page</a>. 
+		</p>
+	</div>
+	
+	<div class="content">
+		<h2>stuff.</h2>
+		<p class="stuffp">
+		Click the arrow to read more about these items.
+		</p>
+
+		<h3>Thinkpad x220 <button type="submit" onclick="toggleOpen('hc1')"><i id='hc1b' class='fa fa-caret-down ddi' aria-hidden='true'></i>	</button></h3>
+		<p class="stuffp" id="hc1t">
+		</p>
+		<div class="hiddencont" id="hc1">
+			<p class="stuffp">
+			Also known as the <b>Cracker Pad</b>, this device is my go-to laptop. You can read everything about the computer <a href="https://en.wikipedia.org/wiki/ThinkPad_X_series#X220">here</a> but here's a general rundown of my machine:
+			<ul>
+			<li><b>OS:</b> Arch Linux x86_64</li>
+			<li><b>CPU:</b> Intel i5-2520M 3.200GHz</li>
+			<li><b>Memory:</b> 3812MiB DDR3</li>
+			<li><b>Storage:</b> 298.1G</li>
+			<li><b>Display:</b> 12in 1366x768</li>
+			</ul>	       
+			I take this everywhere I can take it including school. If you ask me why I bought a 10 year old laptop, don't expect a straight forward answer. See my laptop <a href="https://i.imgur.com/Vhtb4xZ.png">here</a>.
+			</p>
+		</div>
+
+		<h3>Arch Setup <button type="submit" onclick="toggleOpen('hc2')"><i id='hc2b' class='fa fa-caret-down ddi' aria-hidden='true'></i>	</button></h3>
+		<p class="stuffp" id="hc2t">
+		</p>
+
+		<div class="hiddencont" id="hc2">
+		<p class="stuffp">
+		Yes. I use arch and I <a href="https://qr.ae/pG9GGW">have to tell everyone about it</a>. I'm considering making a repository of my dotfiles. If you're interested, contact me. 
+		<ul>
+		<li><b>WM:</b> xmonad</li>
+		<li><b>Terminal:</b> simple terminal (suckless)</li>
+		<li><b>TE:</b> vim</li>
+		<li><b>Browser:</b> firefox</li>
+		<li><b>Media Player:</b> mpv</li>
+		</ul>
+		I use all of the same dotfiles on my laptop and desktop. You can find an album of my desktop <a href="https://imgur.com/a/xZnyJKK">here</a>.
+		</p>
+		</div>
+
+		<h3>Backback <button type="submit" onclick="toggleOpen('hc3')"><i id='hc3b' class='fa fa-caret-down ddi' aria-hidden='true'></i>	</button></h3>
+		<p class="stuffp" id="hc3t">
+		</p>
+		<div class="hiddencont" id="hc3">
+		<p class="stuffp">
+		The backpack I am describing here is completely differnent than my school backpack. However, some items are in both my school "setup" and my normal one. 
+		<ul>
+		<li>Laptop (Thinkpad x220)</li>
+		<li>Phone & Laptop chargers</li>
+		<li>Hand Sanitizer, Tissues, Masks</li>
+		<li>Frisbee (incase anyone wants to play)</li>
+		<li>TI-84 CE Calculator</li>
+		</ul>
+		</p>
+		</div>
+		
+		<h3>Books <button type="submit" onclick="toggleOpen('hc4')"><i id='hc4b' class='fa fa-caret-down ddi' aria-hidden='true'></i>	</button></h3>
+		<p class="stuffp" id="hc4t">
+		</p>
+		<div class="hiddencont" id="hc4">
+		<p>
+		My all time favorite right now is "Structure and Interpretation of Computer Programs." It teaches the reader about functional programming and it really opened my mind at writing better programs. Not listing every book I have but these are some of my favorites:
+		<ul>
+		<li>SICP - Harold Abelson and Gerald Jay Sussman</li>
+		<li>The Ego and Its Own - Max Stirner </li>
+		<li>The C Programming Language - Brian Kernighan and Dennis Ritchie</li>
+		<li>Anatomy of the State - Murray Rothbard</li>
+		</ul>
+		</p>
+		</div>
+
+	</div>
+
+	<script>
+		function toggleOpen(id)
+		{
+			document.getElementById(id).classList.toggle("hiddencont");	
+			document.getElementById(id+"b").classList.toggle("rotate");
+			document.getElementById(id+"t").classList.toggle("hiddencont");
+		}
+	</script>
+
+</body>
+
+</html>
