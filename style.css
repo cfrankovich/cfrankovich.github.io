@@ -85,12 +85,10 @@ button {
 	color: #f9f1f0;
 	padding: 0px;
 	cursor: pointer;
-	border: 1px solid #f9f1f0;
+	border: 0px solid #f9f1f0;
 	width: 20px;
 	height: 20px;
-	transition: 0.3s;
 	align-items: center;
-	overflow-y: hidden
 }
 
 button:hover {
