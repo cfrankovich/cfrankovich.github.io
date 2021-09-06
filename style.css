@@ -1,3 +1,13 @@
+::-moz-selection {
+	background-color: #F9F1F0;
+	color: #232425;
+}
+
+::selection {
+	background-color: #F9F1F0;
+	color: #232425;
+}
+
 ::-webkit-scrollbar {
 	width: 10px;
 }
