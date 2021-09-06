@@ -1,6 +1,23 @@
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #121314;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #343536;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #7C9CAB; 
+}
+
 html {
 	font-family: Hack, Courier New, Courier, monospace;
 	color: #F9F1F0;
+	overflow: hidden;
 }
 
 html, body {
