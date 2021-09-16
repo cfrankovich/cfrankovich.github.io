@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1">
+	<meta data-react-helmet="true" name="msapplication-TileColor" content="#7C9CAB">
+	<meta data-react-helmet="true" name="theme-color" content="#7C9CAB">
+  	<meta data-react-helmet="true" name="description" content="personal website/blog">
+	<meta data-react-helmet="true" property="og:type" content="website">
+	<meta data-react-helmet="true" property="og:url" content="frankovich.dev">
+	<meta data-react-helmet="true" property="og:description" content="personal website/blog">
+	<meta data-react-helmet="true" name="twitter:widgets:theme" content="light">
+	<meta data-react-helmet="true" name="twitter:dnt" content="on">
+	<meta data-react-helmet="true" name="twitter:creator" content="@carsonfranko">
+	<meta data-react-helmet="true" name="twitter:title" content="cfrankovich | blog">
+	<meta data-react-helmet="true" name="twitter:description" content="personal website/blog">
+	<title>blog</title>
+	<link rel="stylesheet" href="../style.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+
+<body>
+	<nav>
+		<a href="../home" class="navlink">home</a>	
+		<a href="../about" class="navlink">about</a>	
+		<a href="../blog" class="navlink">blog</a>	
+		<a href="../contact" class="navlink">contact</a>	
+	</nav>
+
+	<div class="content">
+		<h2>why i use linux.</h2>
+		<p>
+		I've heard some criticism about my choice in using linux as my
+		main desktop and some other things I'll write about soon. Upon
+		hearing these amusing statements I couldn't help but writing
+		this ridiculous blog page on it. I'll start out by addressing
+		why I use linux and then dive into the whole sheep nonsense. 
+		<br></br>
+		Yes. A minimalist distro like arch linux is not what
+		someone would naturally think of when the word "Operating
+		System" comes to mind. Arch has a reputation for breaking and
+		being a difficult distro to use. So why do I use it? The
+		answer is simple. I want to. There are some key reasons on why
+		I want to use it but before I talk about those I want to point
+		out that using a different OS from everyone else doesn't make
+		me special, better, or cooler. It's simply another operating
+		system that I voluntarily chose to use and one should not judge
+		the way I compute the same way one should not judge for music
+		taste. Now there are a couple of reasons why I think that
+		everybody should use at least some form of linux. 
+		<br></br>
+		Generally speaking, linux is F.O.S.S. (free [and] open source
+				software.) This means that there is no
+		proprietor controlling the user of the system or program they
+		created. Of course, not all proprietary software is evil but it
+		is best to not use it when possible. Free software gives the
+		freedom to the user to view and modify source code of said
+		software. Does everybody know how to read and write code? Of
+		course not! The thing that matters most is that the opportunity
+		is there when the user has the freedom to view and modify the
+		source code of programs they use. Proprietary code also
+		typically comes with spyware. Let's take innocent software like
+		<a
+		href="https://www.microsoft.com/en-us/microsoft-365/microsoft-365-for-home-and-school-faq?legRedir=true&CorrelationId=c9c5b549-11ad-4f71-bf81-b7e069fdb372">Microsoft
+		Office</a> as an example. Software bundled in this package
+		require that you make a microsoft account and connect to the
+		internet upon installing! Why would Microsoft want you to make
+		an account? I'll leave that question for you to debate. Spyware
+		is a touchy subject since most users simply do not care about
+		their lives being spied on so it all depends on personal
+		preference. Proprietary software also does things that the user
+		typically does not want! Backdoors, censorship, and
+		surveillance (which we already covered.) The most recent
+		backdoor that I have experienced is actually on my Chrome Book.
+		I have refused to update my system for a while since it would
+		break compatibility of a method I used to boot debian on it.
+		Google programmed ChromeOS to have a universal backdoor that is
+		used for updating the system. I never used Chrome OS except as
+		a boot loader for debian but at one point Chrome OS did not
+		start as expected and forced the update upon me. Gee I sure
+		hope that <a
+		href="https://www.theregister.com/2019/08/22/buying_a_chromebook_dont_forget_to_check_when_it_expires/">I
+		would still be able to compute despite not wanting to update my
+		OS</a>. I can go on and on about proprietary software just <a
+		href="../contact">ask me</a> about it and I'll be happy to
+		talk.
+		<br></br>
+		I can't bring up why I use linux without mentioning the
+		security reasons. Malware is more common on Windows. This is
+		due to a number of reasons but an argument that is brought up the
+		most is that Windows is the most used operating system on the
+		market. Why does this matter? Well, since most people use
+		windows as their main OS, this means that there are more
+		targets for a black hat to attack. Now before I explain this, I
+		should bring up 2 main reasons why black hats do what they do.
+		They either attack for money or publicity. Now explain to me.
+		If you were a black hat hacker, why would you ever target a
+		small percentage of users if you want to gain the most money or
+		publicity you can possible? Not to mention that linux users are
+		generally more "tech savy" than the average windows user. Of
+		course, there are more reasons than just stereotypes on why
+		linux is more secure like the kernel. On linux and other UNIX
+		based systems (macos too), device drivers are built into the
+		kernel. On windows, device drivers are on top of the kernel.
+		This is a major flaw since drivers are made to talk to
+		hardware. If a driver were to be compromised, an attacker would
+		have very low level access to the computer and this basically
+		means they have full access to your computer. You may argue "oh
+		b-but linux drivers means they can be compromised too!1!1!!"
+		That is correct but on linux and other UNIX based systems, 3rd
+		party drivers are frowned upon and are never even used unless
+		they have to. On windows, almost all windows system requires
+		third party drivers to be installed. This also ties back into
+		the market where windows completely controls. Most companies
+		will want to take advantage of this market and they make tech
+		for people (like headphones for example) and usually require
+		their own drivers to be installed. 
+		<br></br>
+		Installing software has never been easier that using a single
+		command in the terminal. On a windows system, you have to first
+		look up what you want to install on a web browser, find the
+		correct link of what you want to install, click the download
+		link that matches your system, then run an executable that
+		takes you through multiple steps to install a program. On the
+		other hand, most linux distros (if not all) simply
+		requires you to type in a command into the terminal and
+		installs the package for you with no extra steps. On arch, if
+		the package is not in the database, you can try the AUR (Arch
+				User Repository) which will most likely have
+		the package you would want to install. Of course, some windows
+		normies will install linux and try to get their proprietary
+		programs like adobe reader, microsoft office, and maybe even
+		their favorite program that spies on them. Fortunately,
+		companies that make these programs don't even support a linux
+		version! As an effect they'll <i>wine</i> (see what I did
+				there) and cry about it and never touch linux
+		again because it doesn't support the software that they use and
+		love everyday. There are alternatives that are just as good if
+		not better than your spyware. The software you use is just a
+		tool to get something done.  
+		<br></br>
+		Linux is literally a sandbox. Especially minimal distros 
+		like arch linux. I can decide what I want to install on my
+		system and I can choose what I don't want to install on my
+		system unlike certain other operating systems. This is more of
+		a personal reason but I would like to include this in reasons
+		that everybody should use linux since they can customize their
+		computing to whatever they would like. Even if people don't
+		know how to edit some files or install a couple packages, there
+		are plenty of options available for noobs that need a <a
+		href="https://www.techradar.com/best/best-linux-distros">just
+		works distro</a>. That all act and behave differently. When I
+		talk about my personal reasons, I'll explain why I enjoy having
+		a sandbox. Why should you care about the way your computer
+		works and looks? Well that's just up to you. Would you rather
+		have Microsoft tell you what you must have or would you like a
+		more freedom based approach that is more open ended? You
+		choose.
+		</p>
+	</div>
+
+</body>
+
+</html>
