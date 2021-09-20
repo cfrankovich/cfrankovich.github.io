@@ -122,10 +122,6 @@ button {
 	align-items: center;
 }
 
-button:hover {
-	background-color: 
-}
-
 .rotate {
 	transform: rotate(180deg);
 }
@@ -134,3 +130,9 @@ button:hover {
 	text-decoration: none;
 }
 
+.blogimg {
+	display: block;
+	margin: auto;
+	border: 2px solid #7C9CAB;
+	margin-bottom: 2ch;
+}
