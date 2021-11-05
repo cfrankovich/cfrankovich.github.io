@@ -23,11 +23,11 @@
 
 <body>
 	<nav>
-		<a href="./home" class="navlink">home</a>	
-		<a href="./about" class="navlink">about</a>	
-		<a href="./blog" class="navlink">blog</a>	
-		<a href="./contact" class="navlink">contact</a>	
-	</nav>
+		<a href="../home" class="navlink">home</a>	
+		<a href="../about" class="navlink">about</a>	
+		<a href="../blog" class="navlink">blog</a>	
+		<a href="../contact" class="navlink">contact</a>	
+	<nav>
 
 	<div class="content">
 		<h2>intro.</h2>
@@ -37,34 +37,34 @@
 
 		<h2>the question.</h2>
 		<p>
-		<img src="./imgs/question2c.png" alt="question" style="width: 100%" class="blogimg"></img>
-		<img src="./imgs/question2c2.png" alt="question" style="width: 100%" class="blogimg"></img>
+		<img src="../imgs/question2c.png" alt="question" style="width: 100%" class="blogimg"></img>
+		<img src="../imgs/question2c2.png" alt="question" style="width: 100%" class="blogimg"></img>
 		The first part of the question throws weird words at you that you don't need to know. All it's doing is restating what they give you. The second part of the question is the task. A trace table is essentially a tool programmers will use to debug their code in an organized way. The trace table is given to us so all we have to do is debug an assembly program. 
 		</p>
 
 		<h2>given.</h2>
 		<p>
 		We are given a number of confusing things but this section will break down each one. First off, we are given the instruction set.
-		<img src="./imgs/instructionset.png" alt="question" style="width: 40%" class="blogimg"></img>
+		<img src="../imgs/instructionset.png" alt="question" style="width: 40%" class="blogimg"></img>
 		This table is our instructions to follow when filling out the trace table. You could also think of this like memory in a way where address 20 contains the instruction "LDD 96." More on this later. The second part of this table are addresses 93 to 98. These just hold the values next to them in memory (you'll see on the trace table). And the third part is the IX which is 8. All of this information is crucial to setting up our trace table later on. 
 		<br></br>
 		The second thing we're given is the ASCII code table.
-		<img src="./imgs/asciitable.png" alt="question" style="width: 60%" class="blogimg"></img>
+		<img src="../imgs/asciitable.png" alt="question" style="width: 60%" class="blogimg"></img>
 		This isn't very relevant until we reach the certain instruction. However, if you look at the memory, you'll notice 453 comes up often. Could these be related?
 		<br></br>
 		The third given table is the most important and allows us to solve the problem.
-		<img src="./imgs/instructions.png" alt="question" style="width: 60%" class="blogimg"></img>
+		<img src="../imgs/instructions.png" alt="question" style="width: 60%" class="blogimg"></img>
 		This is the table that holds all instructions that is directly related to the instructions in the first given table. Op code means the operation code which is the abbriviation for an instruction. Operand is basically the argument to the instruction and is typically used to perform an operation. The explanation explains what the instruction is doing and how to fill it out in the trace table.
 		<br></br>
 		The final given table is the trace table itself. This looks scary and confusing but it just acts as a template for us to fill in and debug our instructions.
-		<img src="./imgs/tracetable.png" alt="question" style="width: 60%" class="blogimg"></img>
+		<img src="../imgs/tracetable.png" alt="question" style="width: 60%" class="blogimg"></img>
 		I will go more in depth about the trace table.
 		</p>
 
 		<h2>trace table.</h2>
 		<p>
 		Earlier, you saw that the trace table looked like some giant spreadsheet or something of the sort. Let's go to the top and explore what the trace table is.
-		<img src="./imgs/tracetablecropped.png" alt="question" style="width: 100%" class="blogimg"></img>
+		<img src="../imgs/tracetablecropped.png" alt="question" style="width: 100%" class="blogimg"></img>
 		The trace table is built in a way to make each row one instruction line. This will make more sense once we begin. Five main parts of the trace table:
 		<ul>
 		<li>Instruction Addresses</li>
@@ -78,7 +78,7 @@
 
 		<h2>explanation.</h2>
 		<p>
-		So what are all these fancy names and symbols and how do I apply that knowledge to this question? You don't need to know anything about the chapter (4.2) you are being tested on and only need to follow instructions with caution. All you have to do is go to each memory address in the first column and "perform" the explanation accordingly. Slow and steady wins the race. Make sure you take your time while going through the instructions. I explained some instructions in class and wrote them in the table so I won't do it here. If you need any more explanation or a work through don't be afraid to <a href="./contact">ask</a>! 
+		So what are all these fancy names and symbols and how do I apply that knowledge to this question? You don't need to know anything about the chapter (4.2) you are being tested on and only need to follow instructions with caution. All you have to do is go to each memory address in the first column and "perform" the explanation accordingly. Slow and steady wins the race. Make sure you take your time while going through the instructions. I explained some instructions in class and wrote them in the table so I won't do it here. If you need any more explanation or a work through don't be afraid to <a href="../contact">ask</a>! 
 		</p>
 
 	</div>
