@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1">
+	<meta data-react-helmet="true" name="msapplication-TileColor" content="#7C9CAB">
+	<meta data-react-helmet="true" name="theme-color" content="#7C9CAB">
+  	<meta data-react-helmet="true" name="description" content="personal website/blog">
+	<meta data-react-helmet="true" property="og:type" content="website">
+	<meta data-react-helmet="true" property="og:url" content="frankovich.dev">
+	<meta data-react-helmet="true" property="og:description" content="personal website/blog">
+	<meta data-react-helmet="true" name="twitter:widgets:theme" content="light">
+	<meta data-react-helmet="true" name="twitter:dnt" content="on">
+	<meta data-react-helmet="true" name="twitter:creator" content="@carsonfranko">
+	<meta data-react-helmet="true" name="twitter:title" content="cfrankovich">
+	<meta data-react-helmet="true" name="twitter:description" content="personal website/blog">
+	<title>blog</title>
+	<link rel="stylesheet" href="./style.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+
+<body>
+	<nav>
+		<a href="./home" class="navlink">home</a>	
+		<a href="./about" class="navlink">about</a>	
+		<a href="./blog" class="navlink">blog</a>	
+		<a href="./contact" class="navlink">contact</a>	
+	</nav>
+
+	<div class="content">
+		<h2>intro.</h2>
+		<p>
+		Question 2C can be very daunting to even look at. I'm willing to bet most people would skip it upon seeing how much is given. However, this question only tests you on your direction following skills an a bit of common sense. If this web page doesn't teach you everything about Question 2C, please <a href="./contact">contact me</a> and I'll be happy to help. Let's begin by digesting the problem. 
+		</p>
+
+		<h2>the question.</h2>
+		<p>
+		<img src="./imgs/question2c.png" alt="question" style="width: 100%" class="blogimg"></img>
+		<img src="./imgs/question2c2.png" alt="question" style="width: 100%" class="blogimg"></img>
+		The first part of the question throws weird words at you that you don't need to know. All it's doing is restating what they give you. The second part of the question is the task. A trace table is essentially a tool programmers will use to debug their code in an organized way. The trace table is given to us so all we have to do is debug an assembly program. 
+		</p>
+
+		<h2>given.</h2>
+		<p>
+		We are given a number of confusing things but this section will break down each one. First off, we are given the instruction set.
+		<img src="./imgs/instructionset.png" alt="question" style="width: 40%" class="blogimg"></img>
+		This table is our instructions to follow when filling out the trace table. You could also think of this like memory in a way where address 20 contains the instruction "LDD 96." More on this later. The second part of this table are addresses 93 to 98. These just hold the values next to them in memory (you'll see on the trace table). And the third part is the IX which is 8. All of this information is crucial to setting up our trace table later on. 
+		<br></br>
+		The second thing we're given is the ASCII code table.
+		<img src="./imgs/asciitable.png" alt="question" style="width: 60%" class="blogimg"></img>
+		This isn't very relevant until we reach the certain instruction. However, if you look at the memory, you'll notice 453 comes up often. Could these be related?
+		<br></br>
+		The third given table is the most important and allows us to solve the problem.
+		<img src="./imgs/instructions.png" alt="question" style="width: 60%" class="blogimg"></img>
+		This is the table that holds all instructions that is directly related to the instructions in the first given table. Op code means the operation code which is the abbriviation for an instruction. Operand is basically the argument to the instruction and is typically used to perform an operation. The explanation explains what the instruction is doing and how to fill it out in the trace table.
+		<br></br>
+		The final given table is the trace table itself. This looks scary and confusing but it just acts as a template for us to fill in and debug our instructions.
+		<img src="./imgs/tracetable.png" alt="question" style="width: 60%" class="blogimg"></img>
+		I will go more in depth about the trace table.
+		</p>
+
+		<h2>trace table.</h2>
+		<p>
+		Earlier, you saw that the trace table looked like some giant spreadsheet or something of the sort. Let's go to the top and explore what the trace table is.
+		<img src="./imgs/tracetablecropped.png" alt="question" style="width: 100%" class="blogimg"></img>
+		The trace table is built in a way to make each row one instruction line. This will make more sense once we begin. Five main parts of the trace table:
+		<ul>
+		<li>Instruction Addresses</li>
+		<li>ACC</li>
+		<li>Memory Address</li>
+		<li>IX</li>
+		<li>OUTPUT</li>
+		</ul>
+		The instruction addresses should go from 20 to 32 since these are simply indicating which instruction is being processed on that row of the table. The ACC is just some place to store data. Memory address are the different memory addresses (93-98) and are represented by the whole column. IX is kinda like the ACC its just a place to store data. However, we put 8 here because there was an instruction in the first table that had the IX as 8. And output is the output of the program. 
+		</p>
+
+		<h2>explanation.</h2>
+		<p>
+		So what are all these fancy names and symbols and how do I apply that knowledge to this question? You don't need to know anything about the chapter (4.2) you are being tested on and only need to follow instructions with caution. All you have to do is go to each memory address in the first column and "perform" the explanation accordingly. Slow and steady wins the race. Make sure you take your time while going through the instructions. I explained some instructions in class and wrote them in the table so I won't do it here. If you need any more explanation or a work through don't be afraid to <a href="./contact">ask</a>! 
+		</p>
+
+	</div>
+
+</body>
+
+</html>
