@@ -34,6 +34,10 @@
 	scrollbar-color: #1e1e1e #0C090A;
 }
 
+html body {
+	background-color: #000;
+}
+
 #bgimg {
 	position: fixed;
 	top: 50%;
