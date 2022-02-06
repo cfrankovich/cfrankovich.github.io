@@ -34,11 +34,12 @@
 	scrollbar-color: #1e1e1e #0C090A;
 }
 
-html body {
+body {
 	background-color: #000;
 }
 
 #bgimg {
+	background-color: #000;
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -171,3 +172,12 @@ html body {
 	padding-bottom: 5px;
 }
 
+@media only screen and (max-width: 810px) {
+	.catalogcontainer { width: 100%; max-width: 100%; }
+	.contentbox { width: 100%; max-width: 100% }
+	.catalogitem { width: 100%; max-width: 100% }
+}
+
+@media only screen and (max-width: 580px) {
+	.contentbox { display: flex; flex-direction: column}
+}
