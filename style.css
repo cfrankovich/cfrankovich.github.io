@@ -1,139 +1,169 @@
 ::-moz-selection {
-	background-color: #F9F1F0;
-	color: #232425;
+		background-color: #F9F1F0;
+			color: #232425;
 }
 
 ::selection {
-	background-color: #F9F1F0;
-	color: #232425;
+		background-color: #F9F1F0;
+			color: #232425;
 }
 
 ::-webkit-scrollbar {
-	width: 10px;
-}i
+		width: 10px;
+}
 
 ::-webkit-scrollbar-track {
-	background: #121314;
+		background: #121314;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #343536;
+		background: #343536;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: #7C9CAB; 
+		background: #7C9CAB; 
 }
 
-html {
-	font-family: Hack, monospace;
-	color: #F9F1F0;
-	overflow: hidden;
+:root {
+	color-scheme: dark;
 }
 
-html, body {
-	width: 100%;
-	height: 100%;
-	margin: 0px;
-	padding: 0px;
-	overflow-x: hidden;
-}
-
-body {
-	background-color: #232425;
-}
-
-.content {
-	max-width: 64ch;
-	padding-top: 2ch;
+* {
+	padding: none;
 	margin: auto;
-	border-bottom: 2px solid #343536; 
+	scrollbar-color: #1e1e1e #0C090A;
 }
 
-h2 {
-	margin: auto;
-	color: #7C9CAB; 
-	padding-bottom: .7ch;
+#bgimg {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 105%;
+	min-height: 105%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	overflow: hidden;	
 }
 
-h3 {
+.links {
+	font-family: monospace;
 	margin: 0;
-	padding-bottom: .5ch;
-	color: #F9F1F0;
+	position: absolute;
+	top: 42%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: auto;
+	font-size: 16px;
+	background-color: #0C090A;
+	color: #b3b8c3;
+	width: 400px;
+	border: solid 2px #1e1e1e;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 3px;
+	word-wrap: break-word;
 }
 
-p {
-	color: #F9F1F0;
-	margin-top: 0;
-	padding-bottom: 1ch;
-}
-pre {
-	color: #F9F1F0;
-	margin-top: 0;
-	padding-bottom: 1ch;
-}
-nav {
-	position: sticky;
-	top: 0;
-	overflow: hidden;
-	background-color: #343536;
-	text-align: center;
-}
-
-a {
-	color: #F9F1F0;
-}
-
-a:hover {
-	color: #7C9CAB;
-}
-
-.stuffp {
-	color: #F9F1F0;
-	margin: 0;
-	color: #F9F1F0;
-}
-
-ul {
-	margin: 0;
-	padding-bottom: 2ch;
-}
-
-.navlink {
-	color: #F9F1F0;
-	padding: 4px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+.link {
 	text-decoration: none;
+	color: #b3b8c3;
 }
 
-.hiddencont {
-	display: none;
+.link:hover {
+	text-decoration: underline;
 }
 
-/* all buttons are litterally the same */
-button {
-	background-color: #232425;
-	color: #f9f1f0;
-	padding: 0px;
-	cursor: pointer;
-	border: 0px solid #f9f1f0;
-	width: 20px;
-	height: 20px;
-	align-items: center;
+.contentbox {
+	font-family: monospace;
+	font-size: 16px;
+	word-wrap: break-word;
+	overflow: auto;
+	background-color: #0C090A;
+	color: #b3b8c3;
+	width:70%;
+	max-width: 800px;
+	border: solid 2px #1e1e1e;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	margin-top: 1%;
 }
 
-.rotate {
-	transform: rotate(180deg);
-}
-
-.bloglink {
-	text-decoration: none;
+#backbtn {
+	font-family: monospace;
+	font-size: 20px;
+	left: 10px;
+	bottom: 10px;
+	position: absolute;
 }
 
 .blogimg {
-	display: block;
-	margin: auto;
-	border: 2px solid #7C9CAB;
-	margin-bottom: 2ch;
-	margin-top: 2ch;
+	max-width: 250px;
+	max-height: 250px;
+	float: left;
+	margin-right: 10px;
 }
+
+.gradient {
+	position: relative;
+	display: block;
+}
+
+.gradient::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+	right: 0;
+	height: 50%;
+	background: linear-gradient(to top, rgb(0, 0, 0), rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0)); 
+}
+
+.gradient:hover::before {
+	cursor: pointer;
+}
+
+.greentext {
+	color: #87b379;
+}
+
+.catalogcontainer {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 70%;
+	max-width: 800px;
+}
+
+.catalogitem {
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 220px;
+	max-height: 340px;
+	text-align: center;
+	display: inline-block;
+	word-wrap: break-word;
+	overflow: hidden;
+	margin-top 5px;
+	margin-bottom: 20px;
+	padding: 5px 5px 3px;
+	position: relative;
+	font-size: 14px;
+	background-color: #0C090A;
+	color: #b3b8c3;
+	border: solid 2px #1e1e1e;
+	font-family: monospace;
+	text-decoration: none;
+}
+
+.catalogimg {
+	min-height: 50px;
+	min-width: 50px;
+	max-width: 200px;
+	max-height: 200px;
+	padding-bottom: 5px;
+}
+
