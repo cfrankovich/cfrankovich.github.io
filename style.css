@@ -172,6 +172,12 @@ body {
 	padding-bottom: 5px;
 }
 
+.code {
+	color: #dadada;
+	font-size: 14px;
+	background-color: #000000;
+}
+
 @media only screen and (max-width: 810px) {
 	.catalogcontainer { width: 100%; max-width: 100%; }
 	.contentbox { width: 100%; max-width: 100% }
