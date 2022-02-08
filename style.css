@@ -32,6 +32,7 @@
 	padding: none;
 	margin: auto;
 	scrollbar-color: #1e1e1e #0C090A;
+	overflow-x: hidden;
 }
 
 body {
