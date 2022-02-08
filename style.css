@@ -102,7 +102,7 @@ body {
 	font-size: 20px;
 	left: 10px;
 	bottom: 10px;
-	position: absolute;
+	position: sticky;
 }
 
 .blogimg {
