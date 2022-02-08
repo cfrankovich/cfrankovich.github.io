@@ -77,6 +77,10 @@ body {
 	color: #b3b8c3;
 }
 
+.bloglink {
+	text-decoration: underline;
+	color: #b3b8c3;
+}
 .link:hover {
 	text-decoration: underline;
 }
@@ -162,6 +166,10 @@ body {
 	border: solid 2px #1e1e1e;
 	font-family: monospace;
 	text-decoration: none;
+}
+
+.catalogdate {
+	font-size: 13px
 }
 
 .catalogimg {

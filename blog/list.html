@@ -15,7 +15,7 @@
 
 	<div class="contentbox" style="margin-top: 3%">
 		<b><p style="text-align: center; font-size: 24px;">/blog/</p></b>
-		<p style="text-align: center; font-size: 14px">Last Update: 2/6/2022</p>
+		<p style="text-align: center; font-size: 14px">Last Update: 2/8/2022</p>
 		<p style="text-align: center; font-size: 14px"><a class="link" href="./catalog">[Catalog View]</a> <a class="link" href="../home">[Back]</a></p>
 	</div>
 
@@ -34,10 +34,37 @@
 		</p>
 	</div>
 
+	<div class="contentbox">
+		<p><b>carson</b> 02/08/22(Tue)00:09:36 <a class="link" href="./005">No.005</a></p>
+		<p style="padding-bottom: 5px">File: <u><a class="link" href="../imgs/thoughtscriptss.png">thoughtscriptss.png</a></u> (524 KB, 639x644)</p>
+		<a target="_blank" href="../imgs/thoughtscriptss.png"><img class="blogimg" src="../imgs/thoughtscriptss.png"></a>
+		<p>
+		I worked on a script for an extended period of time to make something easier for the first time ever. The something is uploading thoughts to my <a class="bloglink" href="../thoughts">>>>/thoughts/</a> page.
+		Yes, it does seem like a simple task but this is literally the first time I've written a bash script this long. It was the first time I've used sed outside of vim and I tried to not write horrible code.
+		<br></br>
+		The process began when I got home from school and as I was doing my homework, I took breaks in between to work on the script which was a HORRIBLE IDEA! 
+		I was literally trying something new and breaking my thought process as I'm learning. Never doing that again.
+		<br></br>
+		If you would like to void my horrible explanation of the code, just look bellow and you'll find the massive chunk of code I use to upload thoughts.
+		<br></br>
+		Essentially, upon running the program, I can either use the standard input or arguments I pass it which contain the message.
+		The things that I look out for in the message are <span class="code">\n</span>(newline), <span class="code">></span>, and <span class="code"><</span>.
+		<br></br>
+		These special characters dictate new lines and quotes within the message or text I want to post.
+		I replace all the new lines with br's with <span class="code">sed -z "s/\n/br/g"</span> (except i use the angle brackets too) so there are new lines in the message.
+		After this, the script turns into an anomaly by looping through each character of the message and when I reach the angled brackets, I replace it with the html syntax to make it green.
+		The "closing" angle bracket is used to conclude the quote instead of a new line.
+		<br></br>
+		After the finding and replacing is done, I simply just replace the file with the new one and push the changes to github. If you want to see the code go to the full blog page which is at <a class="bloglink" href="./005">>>/blog/005/</a> if you're interested.
+		<br></br>
+		The script is really useful and typing/editing html is a big pain in the rear so I'm planning to replicate this but for the blog and music section of the site too.
+		</p>
+	</div>
+
 
 	<div class="contentbox">
 		<p><b>carson</b> 02/01/22(Tue)11:32:29 <a class="link" href="./002">No.002</a></p>
-		<p style="padding-bottom: 5px">File: <u><a class="link" href="../imgs/rickowens.jpg">rickowens.jpg</a></u> (16 KB, 720x720)</p>
+		<p style="padding-bottom: 5px">File: <u><a class="link" href="../imgs/rickowens.jpg">rickowens.jpg</a></u> (280 KB, 960x1792)</p>
 		<a target="_blank" href="../imgs/rickowens.jpg"><img class="blogimg" src="../imgs/rickowens.jpg"></a>
 		<p>
 		Today was one of the coolest days I've had in a while. I ventured down to Miami's Design District to see high end fashion up close and in person.
