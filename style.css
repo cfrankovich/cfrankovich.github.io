@@ -240,4 +240,11 @@ body {
 @media only screen and (max-width: 800px) {
 	.mobile { display: inline }
 	.pc { display: none; }
-	.linksassassin { width: 90% }
+	.linksassassin { 
+		transform: translate(-0%, -0%);
+		top: 1%;
+		left: 4%;
+		width: 90% 
+	}
+}
+
