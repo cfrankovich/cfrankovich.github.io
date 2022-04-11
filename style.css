@@ -144,6 +144,12 @@ body {
 	margin-right: 10px;
 }
 
+.vid {
+	float: center;
+	max-width: 600px;
+	max-height: 600px;
+}
+
 .gradient {
 	position: relative;
 	display: block;
@@ -223,8 +229,13 @@ body {
 	overflow-x: hidden;
 }
 
-.name {
+.eliminated {
+	color: #ff0000;
+	text-decoration: none;
+}
 
+.eliminated:hover {
+	color: #aa0000;
 }
 
 @media only screen and (max-width: 810px) {
@@ -246,5 +257,6 @@ body {
 		left: 4%;
 		width: 90% 
 	}
+	.vid { width: 95%; height: 95%; }
 }
 
