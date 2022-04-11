@@ -72,6 +72,34 @@ body {
 	word-wrap: break-word;
 }
 
+.linksassassin {
+	font-family: monospace;
+	text-align: center;
+	margin: 0;
+	position: absolute;
+	top: 49%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: auto;
+	font-size: 18px;
+	background-color: #000;
+	color: #b3b8c3;
+	width: 800px;
+	border: solid 2px #1e1e1e;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 3px;
+}
+
+.name {
+	color: #00ff00; 
+	text-decoration: none;
+}
+
+.name:hover {
+	color: white;
+}
+
 .link {
 	text-decoration: none;
 	color: #b3b8c3;
@@ -147,6 +175,14 @@ body {
 	max-width: 800px;
 }
 
+.pc {
+	display: inline;
+}
+
+.mobile {
+	display: none;
+}
+
 .catalogitem {
 	margin-left: 20px;
 	margin-right: 20px;
@@ -187,6 +223,10 @@ body {
 	overflow-x: hidden;
 }
 
+.name {
+
+}
+
 @media only screen and (max-width: 810px) {
 	.catalogcontainer { width: 100%; max-width: 100%; }
 	.contentbox { width: 100%; max-width: 100% }
@@ -196,3 +236,8 @@ body {
 @media only screen and (max-width: 580px) {
 	.contentbox { display: flex; flex-direction: column}
 }
+
+@media only screen and (max-width: 800px) {
+	.mobile { display: inline }
+	.pc { display: none; }
+	.linksassassin { width: 90% }
