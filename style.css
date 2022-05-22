@@ -120,6 +120,24 @@ h2 span {
 }
 
 .pic {
-width: 400px;
+	width: 400px;
+}
+
+@media only screen and (max-width: 900px) {
+	.module {
+		margin: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.middle {
+		display: inline;
+	}
+	h1 {
+		font-size: 22px;
+	}
+	p {
+		font-size: 18px;
+	}
 }
 
