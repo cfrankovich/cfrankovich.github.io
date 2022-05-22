@@ -36,7 +36,7 @@
 * {
 	padding: none;
 	margin: auto;
-	scrollbar-color: #1e1e1e #0C090A;
+	scrollbar-color: #1e1e1e #000000;
 }
 
 body {
@@ -86,6 +86,7 @@ h1 a:hover {
 
 .module {
 	margin: 80px;
+	margin-top: 40px;
 	margin-bottom: 00px;
 }
 
@@ -98,3 +99,27 @@ h1 a:hover {
 	width: 100%;
 	margin-top: 40px;
 }
+
+img {
+	width: 400px;
+	height: 400px;
+	object-fit: cover;
+	filter: grayscale(100%);
+	border: 2px solid #ebebeb;
+}
+
+h2 {
+	font-family: "Iosevka";
+	color: #000000;
+	font-size: 16px;
+}
+
+h2 span {
+	padding: 4px;
+	background-color: #ebebeb;
+}
+
+.pic {
+width: 400px;
+}
+
