@@ -1,0 +1,125 @@
+::-moz-selection {
+	background-color: #ebebeb;
+	color: #000000;
+}
+
+::selection {
+	background-color: #ebebeb;
+	color: #000000;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #ebebeb; 
+}
+
+:root {
+	color-scheme: dark;
+}
+
+@font-face {
+	font-family: "Iosevka";
+	src: url(./assets/fonts/iosevka-term-regular.ttf);
+}
+
+* {
+	padding: none;
+	margin: auto;
+	scrollbar-color: #1e1e1e #000000;
+}
+
+body {
+	background-color: #000000;
+}
+
+h1 {
+	font-family: "Iosevka";
+	font-size: 18px;
+	color: #000000;
+}
+
+h1 span {
+	padding: 2px;
+	background-color: #ebebeb; 
+}
+
+p {
+	font-family: "Iosevka";
+	color: #ebebeb;
+	font-size: 16px;
+	padding: 5px;
+	border: 2px solid #ebebeb;
+}
+
+a {
+	color: #ebebeb;
+}
+
+h1 a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.navlink {
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: #ebebeb;
+	color: #000000;
+}
+
+h1 a:hover {
+	  text-decoration: underline;
+}
+
+.module {
+	margin: 80px;
+	margin-top: 40px;
+	margin-bottom: 00px;
+}
+
+.middle {
+	display: flex;
+	justify-content: center;
+}
+
+.middle .module {
+	width: 100%;
+	margin-top: 40px;
+}
+
+img {
+	width: 400px;
+	height: 400px;
+	object-fit: cover;
+	filter: grayscale(100%);
+	border: 2px solid #ebebeb;
+}
+
+h2 {
+	font-family: "Iosevka";
+	color: #000000;
+	font-size: 16px;
+}
+
+h2 span {
+	padding: 4px;
+	background-color: #ebebeb;
+}
+
+.pic {
+width: 400px;
+}
+
