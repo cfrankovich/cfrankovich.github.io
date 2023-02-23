@@ -1,0 +1,9 @@
+n = int(input())
+r = float(input())
+
+def logistic_map(r, x):
+    return r * x * (1 - x)
+
+for i in range(1, n):
+    x = logistic_map(r, x)
+    print(f&#x27;x_{i} = {x}&#x27;)

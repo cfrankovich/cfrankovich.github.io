@@ -45,7 +45,7 @@ body {
 
 h1 {
 	font-family: "Iosevka";
-	font-size: 18px;
+	font-size: 20px;
 	color: #000000;
 }
 
@@ -57,7 +57,7 @@ h1 span {
 p {
 	font-family: "Iosevka";
 	color: #ebebeb;
-	font-size: 16px;
+	font-size: 18px;
 	padding: 5px;
 	border: 2px solid #ebebeb;
 }
@@ -85,7 +85,7 @@ h1 a:hover {
 }
 
 .module {
-	margin: 80px;
+	margin: 150px;
 	margin-top: 40px;
 	margin-bottom: 00px;
 }
@@ -104,8 +104,28 @@ h1 a:hover {
 	width: 400px;
 	height: 400px;
 	object-fit: cover;
-	filter: grayscale(100%);
+	/* filter: grayscale(100%); */
 	border: 2px solid #ebebeb;
+}
+
+.blogpic {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 50%;
+	object-fit: cover;
+	/* filter: grayscale(100%); */
+	border: 2px solid #ebebeb;
+}
+
+.maththing {
+	margin: auto;
+}
+
+.subhead {
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: underline;
 }
 
 h2 {
@@ -138,6 +158,9 @@ h2 span {
 	}
 	p {
 		font-size: 18px;
+	}
+	.blogpic {
+		max-width: 80%;
 	}
 }
 
